@@ -23,7 +23,6 @@ public class TheaterServiceImpl implements TheaterService {
 
     @Autowired
     TheaterRepository theaterRepository;
-
     @Autowired
     TheaterSeatsRepository theaterSeatsRepository;
 

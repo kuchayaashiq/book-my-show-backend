@@ -13,7 +13,11 @@ public class UserConverter {
         //.builder() is a method
 
         //I need to create the User
-        return UserEntity.builder().name(userEntryDto.getName()).mobile(userEntryDto.getMobNo()).build();
+        return UserEntity.builder()
+                .name(userEntryDto.getName())
+                .mobile(userEntryDto.getMobNo())
+
+                .build();
 
 
         //Second method for creating the object ??
@@ -23,8 +27,12 @@ public class UserConverter {
 
     public static UserResponseDto convertEntityToDto(UserEntity user){
 
-        return UserResponseDto.builder().id(user.getId()).name(user.getName())
-                .mobNo(user.getMobile()).build();
+        return UserResponseDto.builder()
+                .id(user.getId())
+                .name(user.getName())
+                .mobNo(user.getMobile())
+                .tickets(user.getTicketEntities())
+                .build();
 
     }
 

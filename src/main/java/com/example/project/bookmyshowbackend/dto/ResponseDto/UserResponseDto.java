@@ -1,5 +1,6 @@
 package com.example.project.bookmyshowbackend.dto.ResponseDto;
 
+import com.example.project.bookmyshowbackend.Model.TicketEntity;
 import com.example.project.bookmyshowbackend.dto.TicketDto;
 import lombok.Builder;
 import lombok.Data;
@@ -17,5 +18,5 @@ public class UserResponseDto {
     String mobNo;
 
     //Optional
-    List<TicketDto> tickets;
+    List<TicketEntity> tickets;
 }
